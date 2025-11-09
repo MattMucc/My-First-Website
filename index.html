@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matt</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./style.css">
+    <title>Matthew Mucciacciaro's First Website</title>
 </head>
-
+<!--Global *site-wide* content-->
 <body>
-    Matt
+    <header class "site-header">
+        <h1>Welcome to My First Website!</h1>
+        <nav>
+            <ul>
+                <li><a href = "#home">Home</a></li>
+                <li><a href = "#about">About Me</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Unique *page* content-->
+    <main>
+        <section id = "home">
+            <h2>A great place to learn about me</h2>
+            <div>
+                <p>Learn more about the projects that taught me what I know today</p>
+                <button><a href = "#projects">Learn More</a></button>
+            </div>
+        </section>
+        <section id = "about">
+            <h2>About Me</h2>
+            <div>
+                <p>...</p>
+                <p>...</p>
+            </div>
+            <figure>
+                <img src = "./assets/about.jpg" alt = "A picture of a computer">
+            </figure>
+        </section>
+        <section id = "contact">
+            <h2>CONTACT</h2>
+           <form action = "">
+                <label>Email</label>
+                <input type = "email" placeholder = "name@example.com">
+                <label>Message</label>
+                <textarea type = "text" placeholder = "Your message..."></textarea>
+           </form> 
+        </section>
+    </main>
+    <footer class "site-footer">
+        <img src = "./assets/FES.svg" alt = "Frontend Simplified Logo">
+        <div>
+            <a href = "#home">Home</a>
+            <a href = "#about">About Me</a>
+            <a href = "#projects">Projects</a>
+            <a href = "#contact">Contact</a>
+        </div>
+        <p>© 2025 Matthew Mucciacciaro</p>
+    </footer>
 </body>
 </html>
