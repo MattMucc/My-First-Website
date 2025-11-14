@@ -1,62 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "./style.css">
+<html lang = "en">
+  <head>
+    <meta charset= "UTF-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" href = "./style.css" />
     <title>Matthew Mucciacciaro's First Website</title>
-</head>
-<!--Global *site-wide* content-->
-<body>
-    <header class "site-header">
-        <h1>Welcome to My First Website!</h1>
-        <nav>
-            <ul>
-                <li><a href = "#home">Home</a></li>
-                <li><a href = "#about">About Me</a></li>
-                <li><a href = "#projects">Projects</a></li>
-                <li><a href = "#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Unique *page* content-->
-    <main>
-        <section id = "home">
-            <h2>A great place to learn about me</h2>
-            <div>
-                <p>Learn more about the projects that taught me what I know today</p>
-                <button><a href = "#projects">Learn More</a></button>
-            </div>
-        </section>
-        <section id = "about">
-            <h2>About Me</h2>
-            <div>
-                <p>...</p>
-                <p>...</p>
-            </div>
-            <figure>
-                <img src = "./assets/about.jpg" alt = "A picture of a computer">
-            </figure>
-        </section>
-        <section id = "contact">
-            <h2>CONTACT</h2>
-           <form action = "">
-                <label>Email</label>
-                <input type = "email" placeholder = "name@example.com">
-                <label>Message</label>
-                <textarea type = "text" placeholder = "Your message..."></textarea>
-           </form> 
-        </section>
-    </main>
-    <footer class "site-footer">
-        <img src = "./assets/FES.svg" alt = "Frontend Simplified Logo">
-        <div>
-            <a href = "#home">Home</a>
-            <a href = "#about">About Me</a>
-            <a href = "#projects">Projects</a>
-            <a href = "#contact">Contact</a>
+  </head>
+  <!--Body is the global *site-wide* content-->
+  <body>
+    <section>
+      <nav>
+        <img
+          src = "./assets/FES.svg"
+          alt = "Frontend Simplified Logo"
+          class = "logo"
+        />
+        <ul>
+          <li><a href = "#home">Home</a></li>
+          <li><a href = "#about">About Me</a></li>
+          <li><a href = "#discord">Projects</a></li>
+          <li><a href = "#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class = "row">
+          <div class = "home__description">
+            <h1>Best place to learn frontend</h1>
+            <p class = "subheader">
+              Go from absolute beginner to pro with a simplified process
+            </p>
+            <button class = "home__description--button">Start Now</button>
+          </div>
+          <figure>
+            <img src = "./assets/laptop.png" alt = "Home page image" />
+          </figure>
         </div>
-        <p>© 2025 Matthew Mucciacciaro</p>
+      </header>
+    </section>
+    <!--Main is the unique *page* content-->
+    <main>
+      <section id = "about">
+        <h2>About</h2>
+        <div class = "row">
+          <div class = "section__description">
+            <div class = "section__description--wrapper">
+              <p class = "section__description--paragraph">
+                fwejfsjfef rtigmdkvbk kht gmekrgmkdbm cvmrjk mgrkedgmedm.
+              </p>
+              <p class = "section__description--paragraph">
+                ufgsjdg erhefffejf fdnfg erif gfergnfj tkl tkhrpdlm.
+              </p>
+            </div>
+            <figure class = "about__img--wrapper">
+              <img src = "./assets/about.jpg" alt = "A picture of a computer" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id = "discord">
+        <h2>Discord</h2>
+        <div class="row">
+            <div class = "section__description">
+                <figure class = "about__img--wrapper">
+                    <img src = "./assets/discord.png" alt = "Discord Logo" />
+                </figure>
+                <div class = "section__description--wrapper">
+                    <p class = "section__description--paragraph">
+                        fhsifhiasn kiytk hdgksdj thrk sfsm l;rtkhtrp bnjdn.
+                    </p>
+                    <p class = "section__description--paragraph">
+                        dfgjsd fgjdsg bneh rhugehgjesdn uengmlg jefw lpjytlr.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id = "contact">
+        <h2>Contact</h2>
+        <form action = "">
+          <label>Email</label>
+          <input type = "email" placeholder = "name@example.com" />
+          <label>Message</label>
+          <textarea type = "text" placeholder = "Your message..."></textarea>
+          <button>Contact Us!</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img
+        class = "footer__logo"
+        src = "./assets/FES.svg"
+        alt = "Frontend Simplified Logo"
+        class = "logo"
+      />
+      <div class = "footer__links">
+        <a class = "footer__link" href = "#home">Home</a>
+        <a class = "footer__link" href = "#about">About Me</a>
+        <a class = "footer__link" href = "#discord">Projects</a>
+        <a class = "footer__link" href = "#contact">Contact</a>
+      </div>
+      <p>© 2025 Matthew Mucciacciaro</p>
     </footer>
-</body>
+  </body>
 </html>
